@@ -1,0 +1,118 @@
+@import url(index.css);
+@mixin stripes ($first , $second , $deg , $text){
+  color:  $text;
+  background: linear-gradient(
+                  $deg,
+                  $first,
+                  $first 50px,
+                  $second 50px,
+                  $second 100px,
+                  $first 100px,
+                  $first 150px,
+                  $second 150px,
+                  $second
+  );
+  background-size: 141.4px 141.4px; /* 100px * sqrt(2) */
+}
+
+@mixin paragraph($font-size){
+  color: black;
+  background: white;
+  border-radius: 2px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 17px black solid;
+  font-size: $font-size;
+  padding: 10px;
+}
+
+@mixin h($margin){
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+//@include stripes(#222,#333,135deg,white);
+body{
+  margin: 0;
+  #show-nav{
+    border-right: 1px solid #204969;
+    border-left: 1px solid #204969;
+
+  }
+  h1{
+
+    @include h(40px);
+  }
+  #row-1{
+    @include stripes(#222,#333,135deg,white);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    #row-1-col-1{
+
+      p{
+        @include paragraph(20px);
+      }
+    }
+
+    #row-1-col-2{
+
+      p{
+        @include paragraph(20px);
+      }
+    }
+
+
+  }
+  h2{
+    @include h(40px);
+  }
+  #row-2{
+    @include stripes(#222,#333,135deg,white);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    #hidden{
+      display: none;
+      h3{
+        @include h(0px);
+      }
+      #text-inject{
+        background: white;
+        color: black;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+      #quote-btn-close{
+        float: right;
+      }
+    }
+
+    #row-2-col-1{
+
+    }
+
+    #row-2-col-2{
+      p{
+        @include paragraph(20px);
+      }
+    }
+    .btn{
+      margin-bottom: 10px;
+    }
+  }
+  #row-3{
+    @include stripes(#222,#333,135deg,white);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    #row-3-col-1{
+      p{
+        @include paragraph(20px);
+      }
+    }
+  }
+
+}

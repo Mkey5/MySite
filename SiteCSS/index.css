@@ -1,0 +1,142 @@
+@-webkit-viewport {
+  width: device-width; }
+@-moz-viewport {
+  width: device-width; }
+@-ms-viewport {
+  width: device-width; }
+@-o-viewport {
+  width: device-width; }
+@viewport {
+  width: device-width; }
+@font-face {
+  font-family: chewy;
+  src: url(../SiteFonts/Chewy/Chewy.ttf); }
+@font-face {
+  font-family: fredoka;
+  src: url(../SiteFonts/Fredoka_One/FredokaOne-Regular.ttf); }
+@font-face {
+  font-family: lucky;
+  src: url(../SiteFonts/Luckiest_Guy/LuckiestGuy.ttf); }
+@font-face {
+  font-family: bangers;
+  src: url(../SiteFonts/Bangers/Bangers.ttf); }
+body {
+  font-family: lucky , Arial , sans-serif;
+  background: gray;
+  color: black;
+  background: linear-gradient(60deg, #606060, #606060 50px, #808080 50px, #808080 100px, #606060 100px, #606060 150px, #808080 150px, #808080);
+  background-size: 141.4px 141.4px;
+  /* 100px * sqrt(2) */
+  background-size: 115.4px 200px; }
+  body #page-content-wrapper #hide .row #cover #cover_image {
+    border-radius: 1%;
+    color: white;
+    background: linear-gradient(135deg, #222, #222 50px, #333 50px, #333 100px, #222 100px, #222 150px, #333 150px, #333);
+    background-size: 141.4px 141.4px;
+    /* 100px * sqrt(2) */
+    padding: 10px; }
+  body #page-content-wrapper #hide .row #cover #center {
+    border-radius: 5%;
+    color: white;
+    background: linear-gradient(135deg, #222, #222 50px, #333 50px, #333 100px, #222 100px, #222 150px, #333 150px, #333);
+    background-size: 141.4px 141.4px;
+    /* 100px * sqrt(2) */
+    padding: 5px; }
+  body #show-nav {
+    display: none;
+    border-radius: 0; }
+    body #show-nav .container-fluid a {
+      font-size: 22px; }
+    body #show-nav .container-fluid .navbar-header a {
+      padding-right: 10px; }
+    body #show-nav .container-fluid .navbar-header #nav-logo-img {
+      width: 50px; }
+    body #show-nav .container-fluid #mainNavBar a {
+      text-shadow: 2px 2px 5px black; }
+    body #show-nav .container-fluid #mainNavBar a:hover {
+      color: white;
+      background: #fb5608; }
+    body #show-nav #img-navbar {
+      display: none; }
+  body #show-content {
+    padding-bottom: 30px;
+    display: none; }
+    body #show-content #row-1-col-1 #panel1 {
+      height: 600px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 17px black solid;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
+      body #show-content #row-1-col-1 #panel1 .panel-heading {
+        color: white;
+        background: linear-gradient(135deg, #222, #222 50px, #333 50px, #333 100px, #222 100px, #222 150px, #333 150px, #333);
+        background-size: 141.4px 141.4px;
+        /* 100px * sqrt(2) */ }
+        body #show-content #row-1-col-1 #panel1 .panel-heading img {
+          width: 415px; }
+      body #show-content #row-1-col-1 #panel1 .panel-body {
+        text-align: center;
+        font-size: 16px;
+        padding-top: 5px; }
+    body #show-content #row-1-col-1 .row .col-md-12 #col-1-p {
+      background: white;
+      color: black;
+      background-size: auto;
+      border-radius: 10px; }
+    body #show-content #panel2 {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 17px black solid;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
+      body #show-content #panel2 .panel-heading {
+        color: black;
+        background: linear-gradient(135deg, #222, #222 50px, #333 50px, #333 100px, #222 100px, #222 150px, #333 150px, #333);
+        background-size: 141.4px 141.4px;
+        /* 100px * sqrt(2) */ }
+        body #show-content #panel2 .panel-heading #row-1-col-2 #myCarousel {
+          /* Carousel base class */
+          height: 300px; }
+          body #show-content #panel2 .panel-heading #row-1-col-2 #myCarousel .carousel-inner .item {
+            /* Declare heights because of positioning of img element */
+            height: 300px;
+            background-color: #777; }
+            body #show-content #panel2 .panel-heading #row-1-col-2 #myCarousel .carousel-inner .item .carr-img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              min-width: 100%;
+              height: 300px; }
+            body #show-content #panel2 .panel-heading #row-1-col-2 #myCarousel .carousel-inner .item .container .carousel-caption {
+              z-index: 10; }
+      body #show-content #panel2 .panel-body {
+        text-align: center;
+        font-size: 16px;
+        padding-top: 5px; }
+  body footer {
+    position: fixed;
+    display: none;
+    height: 45px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.2em;
+    bottom: 0;
+    background: #373737;
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 3px; }
+    body footer p {
+      margin: 0;
+      text-shadow: 2px 2px 5px black; }
+      body footer p #g-right {
+        padding-right: 10px;
+        font-size: 12px; }
+      body footer p #g-left {
+        padding-left: 10px;
+        font-size: 12px; }
+
+/*# sourceMappingURL=index.css.map */

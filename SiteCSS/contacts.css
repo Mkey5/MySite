@@ -1,0 +1,60 @@
+@import url(index.css);
+body {
+  margin: 0; }
+  body #show-nav {
+    border-right: #323a45 1px solid;
+    border-left: #323a45 1px solid; }
+  body #hidden-not-send {
+    display: none;
+    margin-left: 11px;
+    margin-right: 11px; }
+    body #hidden-not-send p:hover {
+      cursor: pointer; }
+  body #hidden-send {
+    display: none;
+    margin-left: 11px;
+    margin-right: 11px; }
+    body #hidden-send p:hover {
+      cursor: pointer; }
+  body #panel #panel1 {
+    border-top: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom: 17px black solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    body #panel #panel1 .panel-heading {
+      color: white;
+      background: linear-gradient(135deg, #222, #222 50px, #333 50px, #333 100px, #222 100px, #222 150px, #333 150px, #333);
+      background-size: 141.4px 141.4px;
+      /* 100px * sqrt(2) */ }
+      body #panel #panel1 .panel-heading img {
+        width: 415px; }
+    body #panel #panel1 .panel-body {
+      text-align: center;
+      font-size: 16px;
+      padding-top: 5px; }
+  body #email-form {
+    height: 100%;
+    text-align: left;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(135deg, #222, #222 50px, #333 50px, #333 100px, #222 100px, #222 150px, #333 150px, #333);
+    background-size: 141.4px 141.4px;
+    /* 100px * sqrt(2) */
+    padding: 10px;
+    border: 2px black solid;
+    margin-bottom: 60px; }
+    body #email-form .form-group label {
+      font-size: 18px;
+      padding-top: 5px;
+      text-shadow: 2px 2px 5px black; }
+    body #email-form .form-group textarea {
+      resize: none; }
+    body #email-form #capital {
+      padding-top: 7px; }
+    body #email-form .center-block {
+      text-align: right;
+      padding-top: 10px; }
+
+/*# sourceMappingURL=contacts.css.map */

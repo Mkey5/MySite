@@ -1,0 +1,24 @@
+@import url(index.css);
+body {
+  margin: 0;
+  font-size: 20px; }
+  body .for-canvas {
+    width: 810px; }
+    body .for-canvas #canvas-id {
+      margin-bottom: 50px; }
+  body #show-content .striped {
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(135deg, #222, #222 50px, #333 50px, #333 100px, #222 100px, #222 150px, #333 150px, #333);
+    background-size: 141.4px 141.4px;
+    /* 100px * sqrt(2) */
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 5px black; }
+  body #hidden {
+    display: none;
+    margin-bottom: 46px;
+    text-align: center; }
+
+/*# sourceMappingURL=games.css.map */

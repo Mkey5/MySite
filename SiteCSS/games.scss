@@ -1,0 +1,47 @@
+@import url(index.css);
+@mixin stripes ($first , $second , $deg , $text){
+  color:  $text;
+  background: linear-gradient(
+                  $deg,
+                  $first,
+                  $first 50px,
+                  $second 50px,
+                  $second 100px,
+                  $first 100px,
+                  $first 150px,
+                  $second 150px,
+                  $second
+  );
+  background-size: 141.4px 141.4px; /* 100px * sqrt(2) */
+}
+
+body{
+  margin: 0;
+  font-size: 20px;
+
+  .for-canvas{
+    width: 810px;
+    #canvas-id{
+      margin-bottom: 50px;
+    }
+  }
+
+  #show-content{
+
+    .striped{
+      border-radius: 5px;
+      @include stripes(#222,#333,135deg,white);
+      padding-left: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-shadow: 2px 2px 5px black;
+    }
+  }
+
+  #hidden{
+    display: none;
+    margin-bottom: 46px;
+    text-align: center;
+  }
+}
+

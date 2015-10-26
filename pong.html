@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Marek Radkov ,Марек Радков, software developer , coder , programmer , games , personal page , blog .">
+    <meta name="author" content="Marek Radkov">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+    <!-- The local files -->
+    <link rel="icon" href="images/favicon.ico">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="SiteCSS/games.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Change this shit !-->
+    <title>Pong</title>
+
+</head>
+
+<body>
+<div id="page-content-wrapper">
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-inverse" id="show-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="home.html" class="pull-left">
+                    <img src="images/me1_.jpg" alt="" class="img-circle" id="nav-logo-img" />
+                </a>
+            </div>
+            <!-- Menu items -->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
+                    <!-- ACTIVE ONE THE PAGE U ARE ONE-->
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-me.html">About me</a></li>
+
+                    <!-- DROP DOWN MENU -->
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="space-cubes.html">Space Cubes</a></li>
+                            <li><a href="pong.html">Pong</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- RIGHT ALIGN-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- IMG NAVBAR -->
+        <img src="images/Pong.jpg" alt="" class="img-responsive center-block" id="img-navbar"/>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container-fluid" id="show-content">
+        <div class="row">
+
+            <!-- When open on PC -->
+            <div class="col-md-9 striped">
+                <p id="paragraph"> &nbsp; The games I made have the only purpose of showing me how the canvas
+                    works. And it's really kind of fun thing to play with :D .
+                    <br/>
+                    <br/>
+                    &nbsp; This is the second canvas game made by me. It is my version of the
+                    classic game Pong. I made the game only for one player but you have an extra - two
+                    options : To play with the mouse , or with the arrow keys. So give it a try.
+                    Find out what suits you best - the mouse or the keys :)).
+
+                    <br/>
+                    <br/>
+                    &nbsp; So the rules are very simple: You play with the blue pad.
+                    The goal is not letting the red ball hit the wall behind your pad.
+                    The player starts with 5 lifes. Each time the ball hits the wall
+                    behind your pad , you lose one life. Each time you achieve to reflect
+                    the red ball of your pad , one point is added to your score. The limitations
+                    of the ball are the borders of the canvas. Hope you like it. Good luck and
+                    have fun :) !
+
+                    <br/>
+                    <br/>
+                <p>The game will start few seconds after you click the "Start Game !" button ... ;)</p>
+
+                </p>
+                <a href="#canvas-id" role="button" class="btn btn-lg btn-danger" id="start-game">Start Game!</a>
+                <a href="#canvas-id" role="button" class="btn btn-lg btn-primary" id="replay-game">Replay ?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- When opened on a mobile device-->
+    <!-- The Well -->
+    <div class="alert alert-danger fade in" id="hidden">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        Sorry , the games are not meant to be played on a mobile device ;)
+    </div>
+    <!-- For the Canvas -->
+    <div class="container-main">
+        <div class="for-canvas container-canvas">
+            <canvas id="canvas-id" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+
+
+</div>
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <p>Copyright © Marek Radkov 2015</p>
+        <p>
+            <span class="glyphicon glyphicon-education" id="g-left"></span>
+            ~Web Design: Marek Radkov~
+            <span class="glyphicon glyphicon-sunglasses" id="g-right"></span>
+        </p>
+    </div>
+</footer>
+<script src="SiteJS/game-pong.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="assets/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
+
+
+
+

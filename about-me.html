@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Marek Radkov ,Марек Радков, software developer , coder , programmer , about, personal page , blog .">
+    <meta name="author" content="Marek Radkov">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+    <!-- The local files -->
+    <link rel="icon" href="images/favicon.ico">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="SiteCSS/aboutMe.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Change this shit !-->
+    <title>About Marek</title>
+</head>
+
+<body>
+<div id="page-content-wrapper">
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-default" id="show-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="home.html" class="pull-left">
+                    <img src="images/me1_.jpg" alt="" class="img-circle"  width="50px"/>
+                </a>
+            </div>
+            <!-- Menu items -->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
+                    <!-- ACTIVE ONE THE PAGE U ARE ONE-->
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="about-me.html">About me</a></li>
+
+                    <!-- DROP DOWN MENU -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="space-cubes.html">Space Cubes</a></li>
+                            <li><a href="pong.html">Pong</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- RIGHT ALIGN-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- IMG NAVBAR -->
+        <img src="images/aboutMe.jpg" alt="" class="img-responsive center-block" id="img-navbar"/>
+    </nav>
+
+
+
+
+
+    <!-- Page Content -->
+    <div class="container-fluid" id="show-content">
+        <h1 id="scroll">Oh , you're so sweet you really wanna know more about me? Well let me tell you:</h1>
+        <div class="row" id="row-1">
+            <div class="col-sm-5" id="row-1-col-1">
+                <p>
+                    <img src="images/me2.jpg" class=" img-responsive center-block" />
+                    &nbsp; &nbsp; &nbsp; My name is Marek Radkov and I'm a software developer. Originally I'm from Veliko Turnovo
+                    but for the past year I live in Sofia. From 2010 till 2015 I've worked as a office manager
+                    in "Radkov Consult Engineering"Ltd. But until August 2014 I've never really did code
+                    anything at all. It was the very next month that I started studying programing in SoftUni and
+                    this is one of my best decisions ever. I really did like coding and it became a very important part
+                    of my life. . .
+                    </p>
+            </div>
+            <div class="col-sm-7" id="row-1-col-2">
+                <p>
+                    &nbsp; &nbsp; &nbsp; Before SoftUni and Sofia , I studied in Veliko Turnovo. In 2014 I graduated
+                    "St.Cyril and St.Methodius University of Veliko Turnovo" and got a bachelor's degree in
+                    International Economic Relations :
+                    <img src="images/university.jpg" class="img-responsive  center-block"/>
+                </p>
+
+            </div>
+        </div>
+
+        <h2> Personal life </h2>
+
+        <div class="row" id="row-2">
+            <div class="col-sm-4" id="hidden">
+                <h3> Daily Quote : </h3>
+                <p id="text-inject"></p>
+                <button type="button" class="btn btn-md btn-success" id="btn-more">More!</button>
+                <button type="button" class="btn btn-md btn-danger" id="quote-btn-close">Close</button>
+            </div>
+            <div class="col-sm-4 " id="row-2-col-1">
+                <img src="images/me-and-rex.jpg" class="img-responsive img-rounded center-block" />
+            </div>
+            <div class="col-sm-8" id="row-2-col-2">
+                <p>&nbsp; &nbsp; &nbsp; What really can I say about myself? I'm an ordinary man , with ordinary life ;).
+                    As you can see , I love animals and I really care about them. On the photo I'm with my best buddy -
+                     Rex. I found him on the street when he was just a little puppy , but now he is fully grown , strong
+                     and loving as much as he can be <3 !
+                    <br/>
+                    &nbsp; &nbsp; &nbsp; If you ask me about hobbies , I don't think that I have one.
+                    There is some things that I like to do in my spare time. I like to exercise ,
+                    to keep my body in shape , go out with friend , family and not quite so often - reading
+                    a good book.
+                    <br/>
+                    &nbsp; &nbsp; &nbsp; Sometimes as every other man , I get little bit down and feel
+                    the need of motivating myself. In these moments I like to read quotes said by smarter
+                    and wiser men /or of course women ;)/. So I decided to make you guys one small gesture and
+                    made a little "quote generator". Be my guest and click the Daily Quote button. Enjoy ! :))
+                    <br/><button type="button" class="btn btn-lg btn-primary" id="quote-btn" >Daily Quote?</button></p>
+
+            </div>
+
+        </div>
+        <h2>Work</h2>
+        <div class="row" id="row-3">
+            <div class="col-sm-12" id="row-3-col-1">
+                <p>&nbsp; &nbsp; &nbsp; Well what can I say. For one year me and my colleagues from
+                    SoftUni learned a lot. But this is coding ,you can't learn everything and
+                    if I can be fair one year is far from enough. Everything is a matter
+                    of experience and of course experience comes with time. But I'm highly
+                    motivated and eager to learn more!
+                    <br/>
+                    &nbsp; &nbsp; &nbsp; The photos that you see are only a little part of the things
+                    that we did as teamwork or personal projects.And this site is one of my personal projects. I didn't put screenshots
+                    of the back-end console applications.
+                    <br/>
+                    In SoftUni we took courses for <strong> HTML , CSS , PHP , JavaScript ,
+                        C# , DataBases and more </strong> . The source code for these projects and more you can checkout
+                    in my <strong>Github</strong> page: <a href="https://github.com/Mkey5">https://github.com/Mkey5</a>
+                     but I don't update it very frequently, so some of the code may be altered and upgraded but not
+                    uploaded ,sorry for that. For this site I used HTML5 , CSS3 , JavaScript , Jquery ,
+                    Bootstrap , SASS and PHP. And I hope that I'm not the only one that likes it :D !
+                </p>
+                <img src="images/java-game.png" class="img-rounded img-responsive" width="100%"/>
+                <img src="images/team-page-1.png" class="img-rounded img-responsive" width="100%"/>
+                <img src="images/team-page-2.png" class="img-rounded img-responsive" width="100%"/>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <p>Copyright © Marek Radkov 2015</p>
+        <p>
+            <span class="glyphicon glyphicon-education" id="g-left"></span>
+            ~Web Design: Marek Radkov~
+            <span class="glyphicon glyphicon-sunglasses" id="g-right"></span>
+            <!--<span class="glyphicon glyphicon-hand-left"></span>-->
+        </p>
+    </div>
+</footer>
+<script src="SiteJS/aboutMe.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="assets/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
+
+
+

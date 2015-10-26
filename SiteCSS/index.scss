@@ -1,0 +1,270 @@
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+$carouselHeight: 400px;
+
+@font-face {
+  font-family: chewy;
+  src: url(../SiteFonts/Chewy/Chewy.ttf);
+}
+
+@font-face {
+  font-family: fredoka;
+  src: url(../SiteFonts/Fredoka_One/FredokaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: lucky;
+  src: url(../SiteFonts/Luckiest_Guy/LuckiestGuy.ttf);
+}
+
+@font-face {
+  font-family: bangers;
+  src: url(../SiteFonts/Bangers/Bangers.ttf);
+}
+
+@mixin stripes ($first , $second , $deg , $text){
+  color:  $text;
+  background: linear-gradient(
+                  $deg,
+                  $first,
+                  $first 50px,
+                  $second 50px,
+                  $second 100px,
+                  $first 100px,
+                  $first 150px,
+                  $second 150px,
+                  $second
+  );
+  background-size: 141.4px 141.4px; /* 100px * sqrt(2) */
+}
+
+body{
+  //font-family: chewy;
+  //font-family: fredoka;
+  font-family: lucky , Arial , sans-serif;
+  //font-family: bangers;
+  background: gray;
+  @include stripes(#606060,#808080,60deg,black);
+  background-size: 115.4px 200px;
+
+
+
+  // FOR THE COVER
+  #page-content-wrapper{
+    #hide{
+      .row{
+        #cover{
+          #cover_image{
+            border-radius: 1%;
+            @include stripes(#222,#333,135deg,white);
+            padding: 10px;
+          }
+
+          #center{
+            border-radius: 5%;
+            @include stripes(#222,#333,135deg,white);
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // FOR NAV BAR
+  #show-nav{
+    display: none;
+    border-radius: 0;
+
+
+    .container-fluid{
+      a{
+        font-size: 22px;
+
+      }
+      .navbar-header{
+
+        a{
+          padding-right: 10px;
+        }
+
+        #nav-logo-img{
+          width: 50px;
+        }
+      }
+      #mainNavBar{
+        a{
+          text-shadow: 2px 2px 5px black;
+        }
+
+        a:hover{
+            color:white;
+            background: #fb5608;
+          }
+        .navbar-nav{
+          .dropdown{
+            .dropdown-menu{
+
+            }
+          }
+        }
+      }
+    }
+    #img-navbar{
+      display: none;
+    }
+  }
+
+
+
+  // FOR PAGE CONTENT
+  #show-content{
+    padding-bottom: 30px;
+    display: none;
+    #row-1-col-1{
+
+      #panel1{
+        height: 600px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 17px black solid;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        .panel-heading{
+          @include stripes(#222,#333,135deg,white);
+
+          img{
+            width: 415px;
+          }
+
+        }
+
+        .panel-body{
+          text-align: center;
+          font-size:16px;
+          padding-top: 5px;
+        }
+
+      }
+
+
+      .row{
+        .col-md-12{
+          #col-1-p{
+            background: white;
+            color: black;
+            background-size: auto;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+
+
+    // CAROUSEL
+    #panel2{
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 17px black solid;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      .panel-heading{
+        @include stripes(#222,#333,135deg,black);
+        #row-1-col-2{
+          //border-radius: 3px;
+          #myCarousel {
+            /* Carousel base class */
+            height: 300px;
+            //margin-bottom: 60px;
+            .carousel-indicators {
+
+            }
+            .carousel-inner {
+              .item {
+                /* Declare heights because of positioning of img element */
+                height: 300px;
+                background-color: #777;
+
+                .carr-img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  min-width: 100%;
+                  height: 300px;
+                }
+                .container {
+                  .carousel-caption {
+                    z-index: 10;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .panel-body{
+        text-align: center;
+        font-size:16px;
+        padding-top: 5px;
+        p{
+
+        }
+      }
+    }
+
+
+  }
+
+
+
+  // FOOTER
+  footer{
+    position: fixed;
+    display: none;
+    height: 45px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.2em;
+    bottom: 0;
+    background: #373737;
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 3px;
+
+
+    p{
+      margin: 0;
+      text-shadow: 2px 2px 5px black;
+      #g-right{
+        padding-right: 10px;
+        font-size: 12px;
+      }
+
+      #g-left{
+        padding-left: 10px;
+        font-size: 12px;
+
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
+
+
+
+

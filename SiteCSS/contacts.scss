@@ -1,0 +1,103 @@
+@import url(index.css);
+@mixin stripes ($first , $second , $deg , $text){
+  color:  $text;
+  background: linear-gradient(
+                  $deg,
+                  $first,
+                  $first 50px,
+                  $second 50px,
+                  $second 100px,
+                  $first 100px,
+                  $first 150px,
+                  $second 150px,
+                  $second
+  );
+  background-size: 141.4px 141.4px; /* 100px * sqrt(2) */
+}
+body{
+  margin: 0;
+  #show-nav{
+    border-right: #323a45 1px solid;
+    border-left: #323a45 1px solid;
+  }
+  #hidden-not-send{
+    display: none;
+    margin-left: 11px;
+    margin-right: 11px;
+    p:hover{
+      cursor: pointer;
+    }
+  }
+  #hidden-send{
+    display: none;
+    margin-left: 11px;
+    margin-right: 11px;
+    p:hover{
+      cursor: pointer;
+    }
+  }
+
+  #panel{
+    #panel1{
+      //height: 600px;
+      border-top: 2px black solid;
+      border-left: 2px black solid;
+      border-right: 2px black solid;
+      border-bottom: 17px black solid;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      .panel-heading{
+        @include stripes(#222,#333,135deg,white);
+
+        img{
+          width: 415px;
+        }
+
+      }
+
+      .panel-body{
+        text-align: center;
+        font-size:16px;
+        padding-top: 5px;
+      }
+
+    }
+  }
+
+  #email-form{
+    height: 100%;
+    text-align: left;
+    border-radius: 5px;
+    @include stripes(#222,#333,135deg,white);
+    padding: 10px;
+    border: 2px black solid;
+    margin-bottom: 60px;
+
+
+    .form-group{
+
+      label{
+        font-size: 18px;
+        padding-top: 5px;
+        text-shadow: 2px 2px 5px black;
+      }
+
+      textarea {
+        resize: none;
+      }
+    }
+
+
+    #capital{
+      padding-top: 7px;
+    }
+
+    .center-block{
+      text-align: right;
+      padding-top: 10px;
+    }
+
+  }
+
+}
+
