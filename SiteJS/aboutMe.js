@@ -37,7 +37,7 @@ $(function(){
     $('#img-navbar').delay(2000).toggle(1000);
 
 
-    // Scrolling to the bottom of the page
+    // Scrolling to the heading
     setTimeout(function(){
         $('html, body').animate({
             scrollTop: $("#scroll").offset().top
@@ -89,6 +89,11 @@ $(function(){
             }
         });
         $('#quote-btn').css("display","none");
+        setTimeout(function(){
+            $('html, body').animate({
+                scrollTop: $("#personal-life").offset().top
+            },1000);
+        },1000);
     });
     $('#btn-more').click(function quotefunc(){
         $('#hidden').css("display","block");

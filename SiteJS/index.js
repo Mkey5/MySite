@@ -41,15 +41,14 @@ $(function(){
         $('#show-content').delay(2000).toggle(1000);
         $('#footer').delay(1000).toggle(1000);
         $('#img-navbar').delay(2000).toggle(1000);
+
+         // Scrolling to the panel
+        setTimeout(function(){
+            $('html, body').animate({
+                scrollTop: $("#panel1").offset().top
+            },1000);
+        },3000);
     });
-
-    // Scrolling to the panel
-    setTimeout(function(){
-        $('html, body').animate({
-            scrollTop: $("#panel1").offset().top
-        },1000);
-    },9000);
-
 
 
 });
